@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script>
+			window.onload = function() {
+				let navbar = document.getElementById("navbar");
+
+				navbar.classList.toggle("hidden-nav");
+			}
+
+			function hideNavbar() {
+				let navbar = document.getElementById("navbar");
+				let invite = document.getElementById("invite");
+				
+				invite.classList.toggle("invite");
+				navbar.classList.toggle("hidden-nav");
+
+				const elements = Array.from(document.getElementsByClassName("nav-link"));
+				
+				if (screen.width >= 890) {
+					return
+				}
+
+				for (var element of elements) {
+					element.style.fontSize = "30px";
+				}
+
+			}
+		
+		</script>
+		
+		<meta name="theme-color" content="#141852">
+		
+		<meta property="og:site_name" content="CRYO BOT OFFICIAL">
+		<meta property="og:url" content="https://cryobot.tk">
+		<meta property="og:title" content="CRYO OFFICIAL">
+		<meta property="og:description" content="The official website for CRYO">
+		<meta property="og:type" content="website">
+		
+		<meta name="og:image" itemprop="image" content="/static/logo.png">
+		
+		<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+		<link rel="manifest" href="/favicons/site.webmanifest">
+		
+		<link rel="stylesheet" type="text/css" href="/static/style.css">
+		
+		<link rel="preconnect" href="https://fonts.gstatic.com"> 
+		
+		<link rel="stylesheet"
+		      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/night-owl.min.css">
+		      
+		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+		
+		<script>hljs.initHighlightingOnLoad();</script>
+
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@600&display=swap" rel="stylesheet">
+		
+		<title>CRYO BOT</title>
+		
+		<a onclick="hideNavbar();"><img class="logo-image" src="/static/c_small.PNG" alt="logo"></a>
+		
+		<nav class="nav" id="navbar">
+			<a class="first-nav-link nav-link" id="first-nav-link" href="#about">About</a>
+			<a class="nav-link" href="#features">Features</a>
+			<a class="nav-link" href="#partners">Partners</a>
+			<a class="nav-link" href="#the-team">Team</a>
+
+			<a id="invite" class="nav-link invite" href="https://discord.com/oauth2/authorize?client_id=771750510893072445&permissions=%201610084087&scope=bot">INVITE</a>
+		</nav>
+		
+	</head>
+	
+  <body>
+  	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NW84ZCN"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+  	
+		<div class="logo">
+			<div class="c"></div>
+			<div class="r"></div>
+			<div class="y"></div>
+			<div class="o"></div>		
+		</div>
+		
+		<h1 id="about">ABOUT CRYO</h1>
+		
+    <article>
+        <p class="about-text">
+			I'll write this later. Website currently being made
+        </p>
+	</article>
+		
+	<h1 id="features">FEATURES</h1>
+	
+	<div id="feature-div">
+		<h1 class="feature-header">Welcome/Leave messages</h1>
+		<p class="feature-text" style="float: left; padding: none;">Customizable welcome and leave messages with an epic welcome card designed by DTG_618</p>
+		<img src="/static/welcome_card.png" alt="Welcome Card" class="feature-image">
+
+		<div style="align-text: center; background-color: transparent; display: inline-block; width: 100%; max-height: 0px;">
+			<h1 class="feature-header" style="margin-top: 20vh;">Powerful Moderation</h1>
+			<h4 class="feature-text">Powerful moderation commands, including kick, ban, warn, listwarns, mute, and much more!</h4>
+			<img src="/static/warn.jpeg" alt="Warn Sample" class="feature-image" style="padding: none; width: 62vw; margin-right: 18vw;">
+		</div>
+		<h1 class="feature-header" style="margin-top: 40vh">An Epic Currency System</h1>
+		<p class="feature-text" style="float: left; padding: none;">An awesome currency system with many features. Art by DTG_618</p>
+		<img src="/static/currency.jpeg" alt="Currency Sample" class="feature-image" style="width: 50vw">
+	</div>
+	
+	<h1 id="partners">PARTNERS</h1>
+	
+	<div class="partner-div" style="float: left">
+		<img class="partner-bot-profile" src="/static/fpbot.jpeg">
+		<a class="partner-bot-name" href="https://discord.com/oauth2/authorize?client_id=738446520952815679&permissions=8&scope=bot">Frying Pan Bot - 370+ Servers</a>
+	</div>
+
+	<div class="partner-div" style="float: left;">
+		<img class="partner-bot-profile" src="/static/xile.webp">
+		<a class="partner-bot-name" href="https://discord.com/oauth2/authorize?client_id=789927885711474708&permissions=8&scope=bot"><br>XILE - 120+ Servers</a>
+	</div>
+	
+	<div class="partner-div" style="float: left;">
+		<img class="partner-bot-profile" src="/static/infinity404.webp">
+		<a class="partner-bot-name" href="https://discord.com/oauth2/authorize?client_id=775833995635589120&permissions=8&scope=bot">Infinity404 - 215+ Servers</a>
+	</div>
+	
+	<div class="partner-div" style="float: left;">
+		<img class="partner-bot-profile" src="/static/kythr.webp">
+		<a class="partner-bot-name" href="https://discord.com/oauth2/authorize?client_id=762570613121613857&scope=bot&permissions=3657070">Kythr Bot - 45+ Servers</a>
+	</div>
+	
+	<div class="partner-div" style="float: left;">
+		<img class="partner-bot-profile" src="/static/ela.webp">
+		<a class="partner-bot-name" href="https://discord.com/oauth2/authorize?client_id=702578220062736424&scope=bot&permissions=2013719766&response_type=code"><br>Ela - 125+ Servers</a>
+	</div>
+	
+	<div class="partner-div" style="float: left;">
+		<img class="partner-bot-profile" src="/static/galaxite.webp">
+		<a class="partner-bot-name" href="https://discord.com/oauth2/authorize?client_id=810039997922803732&permissions=8&scope=bot">Galaxite - 50+ Servers</a>
+	</div>
+	
+	<h1 id="the-team">THE TEAM</h1>
+	
+	<div id="penguinmaster" class="partner-div" style="float: left; margin-left: 18%">
+		<img class="partner-bot-profile" src="/static/developer.gif">
+		<a class="partner-bot-name" target="_blank" href="https://dsc.bio/penguinmaster">Penguin Master</a>
+		<br>
+		<a class="partner-bot-description" target="_blank" href="https://dsc.bio/penguinmaster">Developer of CRYO and creator of the website</a>
+	</div>
+	
+	<div id="darkturtle" class="partner-div" style="float: right; margin-right: 18%">
+		<img class="partner-bot-profile" src="/static/darkturtle0618.jpeg">
+		<a class="partner-bot-name" target="_blank" href="https://dsc.bio/darkturtle0618">DTG_618</a>
+		<br>
+		<a class="partner-bot-description" target="_blank" href="https://dsc.bio/darkturtle0618">CRYO's graphic designer, and website design director. DM for some AWESOME art</a>
+	</div>
+
+  </body>
+  
+  <footer id="copyright">
+  	Website created by Penguin Master#0226<br>Copyright © 2021, CRYO Team
+  </footer>
+</html>

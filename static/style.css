@@ -1,0 +1,348 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	display: flex;
+
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	
+	background-image: url("snowfake.png");
+	background-size: 30vw 30vw;
+	
+	background-color: rgb(20, 24, 82);
+	
+	background-repeat: repeat;
+}
+
+.hidden-nav {}
+
+.nav {
+	height: 8vh;
+	width: 100%;
+	
+	z-index: 1;
+	
+	margin: 0;
+	
+	display: inline;
+	
+	position: fixed;
+	
+	background-color: #141852;
+}
+
+article {
+  align-self: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+
+  display: flex;
+
+  width: 100%;
+
+}
+
+@media screen and (max-width: 890px), screen and (orientation: portrait) {
+	.hidden-nav {
+		display: none;
+	}
+	
+	.nav {
+		height: 100%;
+	}
+	
+	.logo-image {
+		display: inline-block;
+		position: relative;
+	}
+	
+	#first-nav-link {
+		margin-left: 0em;
+		margin-top: 10vh;
+	}
+	
+	.nav-link {
+		text-align: center;
+		padding-top: 0.6vh;
+		padding-bottom: 0.7vh;
+		display: block;
+		width: 95%;
+	}
+}
+
+#about {
+	align-self: center;
+	font-family: Poppins;
+	color: rgb(0, 255, 255);
+	font-size: 6vw;
+	display: inline-block;
+	line-height: 1em;
+	margin-left: 30%;
+}
+
+.about-text {
+	background-color: #141852;
+	font-family: Noto Sans JP;
+	color: rgb(255, 255, 255);
+	font-weight: 300;
+	font-size: 16px;
+	padding-right: 2vw;
+	padding-left: 2vw;
+	text-align: center;
+}
+
+#features {
+	align-self: center;
+	text-align: center;
+	width: 100%;
+	font-family: Poppins;
+	color: rgb(0, 255, 255);
+	font-size: 6vw;
+	display: inline-block;
+	line-height: 1em;
+	margin-top: 40vh;
+}
+
+.feature-header {
+	font-family: Poppins;
+	margin-top: 2vh;
+	font-size: 3vw;
+	width: 100%;
+	text-align: center;
+	background-color: none;
+	color: rgb(0, 255, 255);
+}
+
+.feature-text {
+	font-family: Noto Sans JP;
+	margin-top: 0.5vh;
+	width: 100%;
+	text-align: center;
+	background-color: transparent;
+	color: rgb(0, 255, 255);
+}
+
+.feature-image {
+	float: right;
+	padding: .5vw;
+	margin-top: .7vh;
+	margin-right: 24vw;
+	border-radius: 1.5%/4%;
+	background-color: rgb(0, 255, 255);
+	width: 50vw;
+}
+
+#partners {
+	text-align: center;
+	width: 100%;
+	font-family: Poppins;
+	color: rgb(0, 255, 255);
+	font-size: 6vw;
+	display: inline-block;
+	line-height: 1em;
+	margin-top: 50vh;
+}
+
+.partner-div {
+	height: 30vw;
+	width: 25vw;
+	background-color: transparent;
+	padding-right: 2vw;
+	padding-left: 2vw;
+	text-align: center;
+	margin-left: 3vw;
+	border-color: rgb(0, 255, 255);
+}
+
+.partner-bot-profile {
+	border-radius: 50%;
+	width: 20vw;
+}
+
+.partner-bot-name {
+	text-decoration: none;
+	font-size: 2vw;
+	padding-bottom: 10px;
+	font-family: Poppins;
+	color: #00FFFF;
+}
+
+.partner-bot-description {
+	text-decoration: none;
+	font-size: 16px;
+	padding-bottom: 10px;
+	font-family: Noto Sans JP;
+	color: #00FFFF;
+}
+
+#the-team {
+	text-align: center;
+	width: 100%;
+	font-family: Poppins;
+	color: rgb(0, 255, 255);
+	font-size: 6vw;
+	display: inline-block;
+	line-height: 1em;
+	margin-top: 45vh;
+}
+
+.first-nav-link {
+	margin-left: 2.5em;
+}
+
+.nav-link {
+  color: rgb(0, 255, 255);
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  padding-left: .5em;
+  margin-top: 1.7vh;
+  font-family: Noto Sans JP;
+  font-size: 18px;
+}
+
+.invite {
+	float: right;
+	margin-right: 1.5vw;
+	border-radius: 9%/18%;
+	border-style: solid;
+	border-color: #00FFFF;
+	padding-top: 3px;
+	padding-right: 6px;
+	display: inline-block;
+	background-color: transparent;
+	height: 3.25vw;
+	width: 7vw;
+}
+
+/*God Help Me-nu*/
+.logo-image {
+    width: 27px;
+    height: 27px;
+    background-color: transparent;
+    padding-left: .5em;
+    margin-top: 1.7vh;
+    position: fixed;
+    z-index: 2;
+    display: inline-block;
+}
+
+html, body {
+    display: block;
+    
+    height: 100%;
+
+    margin: 0;
+}
+
+#copyright {
+	font-family: Noto Sans JP;
+	color: rgb(0, 255, 255);
+	font-size: 14px;
+	padding-top: 5vh;
+	position: relative;
+	width: 100%;
+	margin-top: 40%;
+	padding-bottom: 2vw;
+	text-align: center;
+}
+
+.logo {
+	align-content: center;
+
+	display: grid;
+	
+	height: 70vw;
+	width: 70vw;
+}
+
+.c {
+	background-image: url("c.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	
+	height: 80vw;
+	width: 100%;
+	
+	margin-left: 20%;
+	
+	animation: 2s canimation;
+	
+	grid-area: 1 / 1 / 4 / 2; 
+}
+
+
+.r {
+	background-image: url("r.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	
+	height: 80vw;
+	width: 100%;
+	
+	margin-left: 20%;
+	
+	animation: 2s ranimation;
+	
+	grid-area: 1 / 1 / 4 / 2; 
+}
+
+
+.y {
+	background-image: url("y.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	
+	height: 80vw;
+	width: 100%;
+	
+	margin-left: 20%;
+	
+	animation: 2s yanimation;
+	
+	grid-area: 1 / 1 / 4 / 2; 
+}
+
+
+.o {
+	background-image: url("o.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	
+	height: 80vw;
+	width: 100%;
+	
+	margin-left: 20%;
+	
+	animation: 2s oanimation;
+	
+	grid-area: 1 / 1 / 4 / 2; 
+}
+
+
+
+@keyframes canimation {
+	from {margin-left: -250%; opacity: 0;}
+	25% {opacity: 1;}
+	to {margin-left: 20%; opacity: 1;}
+}
+
+@keyframes ranimation {
+	from {margin-left: -200%;}
+	to {margin-left: 20%;}
+}
+
+@keyframes yanimation {
+	from {margin-left: -250%; opacity: 0;}
+	25% {opacity: 1;}
+	to {margin-left: 20%; opacity: 1;}
+}
+
+@keyframes oanimation {
+	from {margin-left: -200%;}
+	to {margin-left: 20%;}
+}
