@@ -12,9 +12,6 @@
 				let navbar = document.getElementById("navbar");
 				let invite = document.getElementById("invite");
 				
-				invite.classList.toggle("invite");
-				navbar.classList.toggle("hidden-nav");
-
 				const elements = Array.from(document.getElementsByClassName("nav-link"));
 				
 				if (screen.width >= 890) {
@@ -24,7 +21,9 @@
 				for (var element of elements) {
 					element.style.fontSize = "30px";
 				}
-
+				
+				invite.classList.toggle("invite");
+				navbar.classList.toggle("hidden-nav");
 			}
 		
 		</script>
