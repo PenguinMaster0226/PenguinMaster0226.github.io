@@ -14,8 +14,10 @@
 				
 				const elements = Array.from(document.getElementsByClassName("nav-link"));
 				
-				if (screen.width > 890) {
+				if (screen.availWidth > 890) {
 					return;
+				} else {
+					console.log(screen.availWidth)
 				}
 				
 				for (var element of elements) {
